@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutComponent } from './features/layout/layout.component';
 import { NgZorroModule } from './ng-zorro.module';
+import { environment } from '../environments/environment';
 
 registerLocaleData(th);
 
@@ -30,6 +31,7 @@ registerLocaleData(th);
   ],
   providers: [
     { provide: NZ_I18N, useValue: th_TH },
+    { provide: 'API_URL', useValue: environment.apiUrl },
   ],
   bootstrap: [AppComponent]
 })

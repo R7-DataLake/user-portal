@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core'
 import axios from 'axios'
 import { environment } from '../../../../environments/environment'
-import { ICreateUser, IUpdateUser } from '../../../core/model/user'
+import { ICreateUser, IUpdateUser } from '../../../core/@types/user'
 
 @Injectable({
   providedIn: 'root'

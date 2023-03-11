@@ -1,0 +1,26 @@
+<nz-modal [(nzVisible)]="isVisible" nzCentered="true" nzKeyboard="false" nzMaskClosable="false"
+  nzTitle="เพิ่มรายการใหม่" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" [nzOkLoading]="isOkLoading">
+  <ng-container *nzModalContent>
+    <form nz-form [formGroup]="validateForm">
+
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="drugDetail">รายละเอียด</nz-form-label>
+        <nz-form-control [nzSpan]="14" nzErrorTip="ระบุรหัส 24 หลัก">
+          <input nz-input formControlName="drugDetail" name="drugDetail" type="text" id="drugDetail">
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="f43">รหัส 24 หลัก</nz-form-label>
+        <nz-form-control [nzSpan]="14" nzErrorTip="ระบุรหัส 24 หลัก">
+          <input nz-input formControlName="f43" name="f43" type="text" id="f43">
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="tmt">รหัส TMT</nz-form-label>
+        <nz-form-control [nzSpan]="14" nzErrorTip="ระบุชื่อ">
+          <input formControlName="tmt" nz-input id="tmt" type="text" name="tmt" />
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+  </ng-container>
+</nz-modal>

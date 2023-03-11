@@ -5,7 +5,7 @@ import { DateTime } from 'luxon';
 
 import * as _ from 'lodash';
 
-import { UserList } from '../../core/model/user';
+import { UserList } from '../../core/@types/user';
 import { ModalNewUserComponent } from './modals/modal-new-user/modal-new-user.component';
 import { UserService } from './services/user.service';
 import { LibService } from '../../shared/services/lib.service';

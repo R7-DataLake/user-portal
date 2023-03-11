@@ -1,7 +1,7 @@
-# Users Management System
+# Users Portal System
 
+Create route
 
-## Project Activity
-
-![Alt](https://repobeats.axiom.co/api/embed/0fa07a3b84ad2eeefe500b8ccf6c206bcc9e9b84.svg "Repobeats analytics image")
-
+```
+ng g module nyan --module app --route nyan
+```

@@ -2,38 +2,53 @@
   <nz-sider nzCollapsible nzWidth="200px">
     <div class="logo"></div>
     <ul nz-menu nzTheme="dark" nzMode="inline">
-      <li nz-menu-item routerLink="/dashboard" routerLinkActive="ant-menu-item-selected">
+      <!-- <li nz-menu-item routerLink="/dashboard" routerLinkActive="ant-menu-item-selected">
         <span nz-icon nzType="pie-chart"></span>
         <span>Dashboard</span>
-      </li>
-      <li nz-submenu nzTitle="ผู้ใช้งานในระบบ" nzIcon="user">
+      </li> -->
+      <li nz-submenu nzTitle="สถิติต่างๆ" nzIcon="area-chart">
         <ul>
-          <li nz-menu-item routerLink="/users" routerLinkActive="ant-menu-item-selected">รายชื่อผู้ใช้งาน</li>
+          <!-- <li nz-menu-item routerLink="/hospitals" routerLinkActive="ant-menu-item-selected">สถิติการส่งข้อมูล</li> -->
+          <li nz-menu-item routerLink="/tables" routerLinkActive="ant-menu-item-selected">ตารางข้อมูล</li>
         </ul>
       </li>
-      <li nz-submenu nzTitle="หน่วยบริการ" nzIcon="team">
+      <li nz-submenu nzTitle="ข้อมูลพื้นฐาน" nzIcon="database">
         <ul>
-          <li nz-menu-item routerLink="/hospitals" routerLinkActive="ant-menu-item-selected">ทะเบียนหน่วยบริการ</li>
+          <li nz-menu-item routerLink="/drugs" routerLinkActive="ant-menu-item-selected">ข้อมูลยาและเวชภัณฑ์</li>
+          <li nz-menu-item routerLink="/drug-usages" routerLinkActive="ant-menu-item-selected">ข้อมูลวิธีการใช้</li>
+          <li nz-menu-item routerLink="/labs" routerLinkActive="ant-menu-item-selected">ข้อมูล LAB</li>
+          <li nz-menu-item routerLink="/lab-groups" routerLinkActive="ant-menu-item-selected">ข้อมูลกลุ่ม LAB</li>
+          <li nz-menu-item routerLink="/occupations" routerLinkActive="ant-menu-item-selected">ข้อมูลอาชีพ</li>
+          <li nz-menu-item routerLink="/insurances" routerLinkActive="ant-menu-item-selected">ข้อมูลสิทธิ์การรักษา</li>
+          <li nz-menu-item routerLink="/nations" routerLinkActive="ant-menu-item-selected">ข้อมูลสัญชาติ</li>
+          <li nz-menu-item routerLink="/providers" routerLinkActive="ant-menu-item-selected">ข้อมูลเจ้าหน้าที่</li>
         </ul>
       </li>
-      <!-- <li nz-menu-item>
-        <span nz-icon nzType="file"></span>
-        <span>File</span>
+
+      <!-- <li nz-submenu nzTitle="จัดการระบบ" nzIcon="setting">
+        <ul>
+          <li nz-menu-item routerLink="/settings" routerLinkActive="ant-menu-item-selected">ตั้งค่าระบบ</li>
+          <li nz-menu-item routerLink="/users" routerLinkActive="ant-menu-item-selected">ผู้ใช้งานในหน่วยงาน</li>
+        </ul>
       </li> -->
     </ul>
   </nz-sider>
   <nz-layout>
     <nz-header>
       <div nz-row>
-        <div nz-col nzFlex="auto"></div>
+        <div nz-col nzFlex="auto">
+          <div style="padding: 10px 0 10px 16px;">
+            <h3 nz-typography>ระบบกลางจัดการข้อมูล</h3>
+          </div>
+        </div>
         <div nz-col nzFlex="200px" style="text-align: right; padding-right: 16px;">
           <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
-            Satit Rianpit
+            เมนูส่วนตัว
             <span nz-icon nzType="down"></span>
           </a>
           <nz-dropdown-menu #menu="nzDropdownMenu">
             <ul nz-menu>
-              <li nz-menu-item>เปลี่ยนรหัสผ่าน</li>
+              <li nz-menu-item nzDisabled>เปลี่ยนรหัสผ่าน</li>
               <li nz-menu-item nzDisabled>แก้ไขข้อมูลส่วนตัว</li>
               <li nz-menu-divider></li>
               <li nz-menu-item (click)="logout()">ออกจากระบบ</li>

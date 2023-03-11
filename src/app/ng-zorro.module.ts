@@ -21,6 +21,13 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzModalModule } from 'ng-zorro-antd/modal';
+import { NzUploadModule } from 'ng-zorro-antd/upload';
+import { NzPaginationModule } from 'ng-zorro-antd/pagination';
+import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
+import { NzTypographyModule } from 'ng-zorro-antd/typography';
+import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
+import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { NzBadgeModule } from 'ng-zorro-antd/badge';
 
 @NgModule({
   declarations: [],
@@ -45,7 +52,14 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
     NzSpaceModule,
     NzToolTipModule,
     NzSelectModule,
-    NzModalModule
+    NzModalModule,
+    NzUploadModule,
+    NzPaginationModule,
+    NzPopconfirmModule,
+    NzTypographyModule,
+    NzDatePickerModule,
+    NzTabsModule,
+    NzBadgeModule
   ],
   exports: [
     NzFormModule,
@@ -67,7 +81,14 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
     NzSpaceModule,
     NzToolTipModule,
     NzSelectModule,
-    NzModalModule
+    NzModalModule,
+    NzUploadModule,
+    NzPaginationModule,
+    NzPopconfirmModule,
+    NzTypographyModule,
+    NzDatePickerModule,
+    NzTabsModule,
+    NzBadgeModule
   ]
 })
 export class NgZorroModule { }

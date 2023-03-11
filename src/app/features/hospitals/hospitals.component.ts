@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { DateTime } from 'luxon';
 import { NzMessageService } from 'ng-zorro-antd/message';
-import { HospitalList } from '../../core/model/hospital';
+import { HospitalList } from '../../core/@types/hospital';
 import { LibService } from '../../shared/services/lib.service';
 import { ModalNewHospitalComponent } from './modals/modal-new-hospital/modal-new-hospital.component';
 import { HospitalService } from './services/hospital.service';

@@ -1,0 +1,11 @@
+<nz-modal [(nzVisible)]="isVisible" nzCentered="true" nzKeyboard="false" nzMaskClosable="false" nzTitle="ค้นหา"
+  (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+  <ng-container *nzModalContent>
+    <nz-input-group [nzSuffix]="suffixIconSearch">
+      <input [(ngModel)]="query" type="text" nz-input placeholder="ระบุคำค้นหา" />
+    </nz-input-group>
+    <ng-template #suffixIconSearch>
+      <span nz-icon nzType="search"></span>
+    </ng-template>
+  </ng-container>
+</nz-modal>

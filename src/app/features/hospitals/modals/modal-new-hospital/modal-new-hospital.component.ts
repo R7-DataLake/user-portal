@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { NzMessageService } from 'ng-zorro-antd/message';
-import { ICreateHospital, IUpdateHospital } from '../../../../core/model/hospital';
+import { ICreateHospital, IUpdateHospital } from '../../../../core/@types/hospital';
 import { LibService } from '../../../../shared/services/lib.service';
 import { HospitalService } from '../../services/hospital.service';
 

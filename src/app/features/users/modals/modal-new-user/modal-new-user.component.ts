@@ -2,7 +2,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { NzMessageService } from 'ng-zorro-antd/message';
-import { ICreateUser, IUpdateUser } from '../../../../core/model/user';
+import { ICreateUser, IUpdateUser } from '../../../../core/@types/user';
 import { RandomstringService } from '../../../../core/services/randomstring.service';
 import { LibService } from '../../../../shared/services/lib.service';
 import { UserService } from '../../services/user.service';

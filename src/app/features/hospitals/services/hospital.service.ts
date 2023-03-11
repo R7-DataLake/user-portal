@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import axios from 'axios';
 import { environment } from '../../../../environments/environment';
-import { ICreateHospital, IUpdateHospital } from '../../../core/model/hospital';
+import { ICreateHospital, IUpdateHospital } from '../../../core/@types/hospital';
 
 @Injectable({
   providedIn: 'root'

@@ -5,11 +5,9 @@ LABEL maintainer="Satit Rianpit <rianpit@gmail.com>"
 
 WORKDIR /app
 
-RUN apk add --upgrade --no-cache --virtual deps python3 build-base git
+RUN apk add --upgrade --no-cache --virtual deps python3
 
 COPY . .
-
-RUN git config --global url.https://github.com/.insteadOf git://github.com/
 
 RUN wget -qO /bin/pnpm "https://github.com/pnpm/pnpm/releases/latest/download/pnpm-linuxstatic-x64" && chmod +x /bin/pnpm
 
