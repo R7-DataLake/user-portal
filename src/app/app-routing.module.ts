@@ -18,6 +18,8 @@ const routes: Routes = [
     component: LayoutComponent,
     canActivate: [AuthGuard],
     children: [
+
+      { path: 'dashboard', loadChildren: () => import('./features/dashboard/dashboard.module').then(m => m.DashboardModule) },
       {
         path: 'drugs',
         loadChildren: () => import('./features/drugs/drugs.module').then(m => m.DrugsModule)
@@ -61,7 +63,6 @@ const routes: Routes = [
     loadChildren: () => import('./not-found/not-found.module').then(m => m.NotFoundModule)
   },
 
-  { path: 'dashboard', redirectTo: 'drugs', pathMatch: 'full' },
   { path: '**', redirectTo: 'not-found', pathMatch: 'full' }
 ];
 

@@ -51,7 +51,7 @@ export class LoginComponent {
           const token = response.data.access_token;
           sessionStorage.setItem('token', token);
           this.message.create('success', 'เข้าสู่ระบบสำเร็จ');
-          this.router.navigate(['/drugs']);
+          this.router.navigate(['/dashboard']);
 
           return;
         } else {

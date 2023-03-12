@@ -1,10 +1,15 @@
 <nz-content>
   <nz-breadcrumb>
-    <nz-breadcrumb-item>Dashboard</nz-breadcrumb-item>
-    <nz-breadcrumb-item>วิธีการใช้ยาและเวชภัณฑ์ไม่ใช่ยา</nz-breadcrumb-item>
+    <nz-breadcrumb-item>
+      <span nz-icon nzType="home"></span>
+    </nz-breadcrumb-item>
+    <nz-breadcrumb-item>
+      <span nz-icon nzType="file-search"></span>
+      กลุ่มของ LAB
+    </nz-breadcrumb-item>
   </nz-breadcrumb>
   <nz-page-header style="background-color: white;" class="site-page-header" (nzBack)="onBack()" nzBackIcon
-    nzTitle="รายการวิธีการใช้ยาและเวชภัณฑ์ไม่ใช่ยา">
+    nzTitle="รายการกลุ่มของ LAB">
     <nz-page-header-extra>
       <nz-space>
         <button *nzSpaceItem nz-button (click)="search()">

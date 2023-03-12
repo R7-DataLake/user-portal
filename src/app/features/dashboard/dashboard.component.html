@@ -1,0 +1,55 @@
+<nz-content>
+  <nz-breadcrumb>
+    <nz-breadcrumb-item>
+      <span nz-icon nzType="home"></span>
+    </nz-breadcrumb-item>
+    <nz-breadcrumb-item>
+      <span nz-icon nzType="pie-chart"></span>
+      Dashboard
+    </nz-breadcrumb-item>
+  </nz-breadcrumb>
+  <nz-page-header style="background-color: white;" class="site-page-header" nzTitle="ภาพรวมข้อมูลในระบบ">
+  </nz-page-header>
+  <div class="inner-content">
+
+    <nz-row [nzGutter]="16" style="padding-bottom: 16px;">
+      <nz-col [nzSpan]="6">
+        <nz-card>
+          <nz-statistic [nzValue]="(personTotal | number)!" [nzTitle]="'ผู้ป่วยทั้งหมด (คน)'"></nz-statistic>
+        </nz-card>
+      </nz-col>
+      <nz-col [nzSpan]="6">
+        <nz-card>
+          <nz-statistic [nzValue]="(opdTotal | number)!" [nzTitle]="'ผู้ป่วยนอก (ครั้ง)'"></nz-statistic>
+        </nz-card>
+      </nz-col>
+      <nz-col [nzSpan]="6">
+        <nz-card>
+          <nz-statistic [nzValue]="(ipdTotal | number)!" [nzTitle]="'ผู้ป่วยใน (ครั้ง)'"></nz-statistic>
+        </nz-card>
+      </nz-col>
+      <nz-col [nzSpan]="6">
+        <nz-card>
+          <nz-statistic [nzValue]="(chronicTotal | number)!" [nzTitle]="'ผู้ป่วยเรื้อรัง (คน)'"></nz-statistic>
+        </nz-card>
+      </nz-col>
+    </nz-row>
+
+    <div nz-row [nzGutter]="8">
+      <div nz-col [nzSpan]="8">
+        <nz-card>
+          <div echarts [options]="personPiChartOption" (chartInit)="onPersonChartInit($event)" style="height: 320px;">
+          </div>
+        </nz-card>
+      </div>
+
+      <div nz-col [nzSpan]="16">
+        <nz-card>
+          <div echarts [options]="servicesChartOption" (chartInit)="onServiceChartInit($event)" style="height: 320px;">
+          </div>
+        </nz-card>
+      </div>
+    </div>
+
+  </div>
+</nz-content>

@@ -21,9 +21,11 @@
     "@ant-design/icons-angular": "^15.0.0",
     "@auth0/angular-jwt": "^5.1.2",
     "axios": "^1.2.3",
+    "echarts": "^5.4.1",
     "lodash": "^4.17.21",
     "luxon": "^3.2.1",
     "ng-zorro-antd": "^15.0.3",
+    "ngx-echarts": "^15.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
